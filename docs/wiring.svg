@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="Helvetica, Arial, sans-serif" font-size="14">
+  <rect width="800" height="560" fill="#ffffff"/>
+
+  <!-- Arduino -->
+  <rect x="60" y="40" width="240" height="480" rx="10" fill="#0a7e8c" stroke="#055a64" stroke-width="2"/>
+  <text x="90" y="290" fill="#ffffff" font-size="26" font-weight="bold">Arduino Uno</text>
+  <g fill="#ffffff" text-anchor="end">
+    <text x="290" y="120">D10</text>
+    <text x="290" y="145">D11</text>
+    <text x="290" y="215">D9</text>
+    <text x="290" y="320">D6</text>
+    <text x="290" y="410">D5</text>
+    <text x="290" y="475">5V</text>
+    <text x="290" y="500">GND</text>
+  </g>
+
+  <!-- Buses -->
+  <line x1="380" y1="70" x2="380" y2="470" stroke="#d62828" stroke-width="3"/>
+  <line x1="420" y1="90" x2="420" y2="495" stroke="#222222" stroke-width="3"/>
+  <text x="372" y="62" fill="#d62828" text-anchor="end" font-size="12">5V</text>
+  <text x="428" y="84" fill="#222222" font-size="12">GND</text>
+
+  <!-- Arduino power to buses -->
+  <line x1="300" y1="470" x2="380" y2="470" stroke="#d62828" stroke-width="3"/>
+  <line x1="300" y1="495" x2="420" y2="495" stroke="#222222" stroke-width="3"/>
+
+  <!-- HC-SR04 -->
+  <rect x="520" y="50" width="220" height="110" rx="8" fill="#1d4ed8"/>
+  <text x="640" y="110" fill="#ffffff" font-size="18" font-weight="bold">HC-SR04</text>
+  <g fill="#ffffff"><text x="528" y="75">VCC</text><text x="528" y="95">GND</text><text x="528" y="120">Trig</text><text x="528" y="145">Echo</text></g>
+  <line x1="380" y1="70" x2="520" y2="70" stroke="#d62828" stroke-width="3"/>
+  <line x1="420" y1="90" x2="520" y2="90" stroke="#222222" stroke-width="3"/>
+  <line x1="300" y1="115" x2="520" y2="115" stroke="#f59e0b" stroke-width="3"/>
+  <line x1="300" y1="140" x2="520" y2="140" stroke="#16a34a" stroke-width="3"/>
+
+  <!-- Servo -->
+  <rect x="520" y="190" width="220" height="85" rx="8" fill="#334155"/>
+  <text x="620" y="240" fill="#ffffff" font-size="18" font-weight="bold">SG90 Servo</text>
+  <g fill="#ffffff"><text x="528" y="215">Sig</text><text x="528" y="240">V+</text><text x="528" y="265">GND</text></g>
+  <line x1="300" y1="210" x2="520" y2="210" stroke="#ea580c" stroke-width="3"/>
+  <line x1="380" y1="235" x2="520" y2="235" stroke="#d62828" stroke-width="3"/>
+  <line x1="420" y1="260" x2="520" y2="260" stroke="#222222" stroke-width="3"/>
+
+  <!-- LED -->
+  <rect x="520" y="300" width="220" height="60" rx="8" fill="#b91c1c"/>
+  <text x="610" y="337" fill="#ffffff" font-size="18" font-weight="bold">Red LED</text>
+  <g fill="#ffffff"><text x="528" y="320">+</text><text x="528" y="350">−</text></g>
+  <line x1="300" y1="315" x2="520" y2="315" stroke="#7c3aed" stroke-width="3"/>
+  <rect x="445" y="305" width="55" height="20" fill="#fde68a" stroke="#92400e" stroke-width="2"/>
+  <text x="472" y="300" text-anchor="middle" font-size="12" fill="#92400e">220 Ω</text>
+  <line x1="420" y1="345" x2="520" y2="345" stroke="#222222" stroke-width="3"/>
+
+  <!-- Buzzer -->
+  <rect x="520" y="390" width="220" height="60" rx="8" fill="#111827"/>
+  <text x="620" y="427" fill="#ffffff" font-size="18" font-weight="bold">Buzzer</text>
+  <g fill="#ffffff"><text x="528" y="410">+</text><text x="528" y="440">−</text></g>
+  <line x1="300" y1="405" x2="520" y2="405" stroke="#0891b2" stroke-width="3"/>
+  <line x1="420" y1="435" x2="520" y2="435" stroke="#222222" stroke-width="3"/>
+
+  <!-- Junction dots -->
+  <g fill="#d62828"><circle cx="380" cy="70" r="5"/><circle cx="380" cy="235" r="5"/><circle cx="380" cy="470" r="5"/></g>
+  <g fill="#222222"><circle cx="420" cy="90" r="5"/><circle cx="420" cy="260" r="5"/><circle cx="420" cy="345" r="5"/><circle cx="420" cy="435" r="5"/><circle cx="420" cy="495" r="5"/></g>
+
+  <text x="400" y="545" text-anchor="middle" font-size="12" fill="#555555">Lines only connect where a dot is drawn. All grounds are common.</text>
+</svg>
