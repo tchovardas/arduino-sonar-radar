@@ -1,0 +1,11 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Arduino / build
+build/
+*.hex
+*.elf
+
+# Processing exports
+application.*/
